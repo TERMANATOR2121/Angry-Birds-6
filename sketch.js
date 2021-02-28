@@ -13,7 +13,9 @@ var score;
 
 function preload() {
     getBackgroundImage();
-
+ if(!backgroundImg){
+        backgroundImg = loadImage("sprites/ground.jpg");
+    }
 }
 
 function setup() {
